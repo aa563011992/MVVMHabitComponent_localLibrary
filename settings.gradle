@@ -1,2 +1,11 @@
-include ':app', ':library-base', ':module-main',':module-sign', ':module-home', ':module-user', ':library-res', ':module-work', ':module-msg'
+include ':app'
+include ':library-base'
+include ':module-main'
+include ':module-sign'
+include ':module-home'
+include ':module-user'
+include ':library-res'
+include ':module-work'
+include ':module-msg'
+include ':library-mvvmhabit'
 
