@@ -1,3 +1,4 @@
+MVVMHabitComponent的本地依赖处理
 # MVVMHabitComponent
 关于Android的组件化，相信大家并不陌生，网上谈论组件化的文章，多如过江之鲫，然而一篇基于MVVM模式的组件化方案却很少。结合自身的调研和探索，在此分享一篇基于[MVVMHabit](https://github.com/goldze/MVVMHabit)框架的一套Android-Databinding组件化开发方案。文章写的比较简单基础，没有大篇幅单向技术的讨论点，目的是让学习了此方案的开发人员都可以快速上手搭建MVVM组件化项目。
 
