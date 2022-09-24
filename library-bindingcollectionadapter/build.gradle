@@ -23,9 +23,9 @@ android {
 }
 
 dependencies {
-    implementation(rootProject.ext.support["androidx-core"])
+    implementation(rootProject.ext.support["core-ktx"])
     implementation(rootProject.ext.support.legacy)
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$rootProject.ext.android.kotlin_version"
+    implementation(rootProject.ext.support.kotlin)
     api(rootProject.ext.support.paging)
     api(rootProject.ext.support.recyclerview)
     api(rootProject.ext.support.viewpager2)

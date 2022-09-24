@@ -8,14 +8,10 @@ ext {
             targetSdkVersion          : 29,
             versionCode               : 1,
             versionName               : "1.0",
-            core_ktx_version          : '1.6.0',
-            kotlin_version            : '1.6.21',
-            kotlinx_coroutines_version: '1.4.3'
     ]
     //version配置
     versions = [
-            "support-version": "29.0.2",
-            "junit-version"  : "4.12",
+
     ]
     //support配置
     support = [
@@ -24,17 +20,20 @@ ext {
             'recyclerview'            : "androidx.recyclerview:recyclerview:1.2.1",
             'design'                  : 'com.google.android.material:material:1.2.0',
             'swiperefreshlayout'      : "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0",
-            'animated-vector-drawable': "com.android.support:animated-vector-drawable:${versions["support-version"]}",
-            'junit'                   : "junit:junit:${versions["junit-version"]}",
+            'animated-vector-drawable': "com.android.support:animated-vector-drawable:29.0.2",
+            'junit'                   : "junit:junit:4.12",
             'viewpager2'              : "androidx.viewpager2:viewpager2:1.0.0",
             'paging'                  : "androidx.paging:paging-runtime:2.0.0",
             'legacy'                  : 'androidx.legacy:legacy-support-core-ui:1.0.0',
-            'androidx-core'                  : 'androidx.legacy:legacy-support-core-ui:1.0.0',
+            'core-ktx'                : 'androidx.core:core-ktx:1.6.0',
+            'kotlin'                  : 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21',
+            'kotlin-plugin'           : 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21',
+            'kotlinx-coroutines'      : 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.3'
     ]
     //依赖第三方配置
     dependencies = [
             //MVVMHabit
-            "MVVMHabit"               : "com.github.goldze:MVVMHabit:3.1.0",
+            //"MVVMHabit"               : "com.github.goldze:MVVMHabit:3.1.0",
             //阿里路由框架
             "arouter-api"             : "com.alibaba:arouter-api:1.5.2",
             "arouter-compiler"        : "com.alibaba:arouter-compiler:1.5.2",
