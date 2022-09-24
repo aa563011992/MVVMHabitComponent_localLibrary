@@ -146,7 +146,7 @@ library-base依赖公共库
 dependencies {
     //support相关库
     api rootProject.ext.support["design"]
-    api rootProject.ext.support["appcompat-v7"]
+    api rootProject.ext.support["appcompat"]
     //library-res
     api project(':library-res')
     //MVVMHabit框架
@@ -162,8 +162,8 @@ Android MVVM模式离不开DataBinding，每个组件中都需要开启，包括
 ```gradle
 android {
     //开启DataBinding
-    dataBinding {
-        enabled true
+    buildFeatures{
+        dataBinding = true
     }
 }
 ```
@@ -299,8 +299,8 @@ android {
     buildTypes {
         ...
     }
-    dataBinding {
-        enabled true
+    buildFeatures{
+        dataBinding = true
     }
 }
 ```

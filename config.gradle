@@ -1,28 +1,25 @@
 ext {
     //android开发版本配置
     android = [
-            compileSdkVersion: 27,
-            buildToolsVersion: "27.0.2",
+            compileSdkVersion: 29,
+            buildToolsVersion: "29.0.2",
             applicationId    : "com.goldze.component",
-            minSdkVersion    : 15,
-            targetSdkVersion : 27,
+            minSdkVersion    : 21,
+            targetSdkVersion : 29,
             versionCode      : 1,
             versionName      : "1.0",
     ]
     //version配置
     versions = [
-            "support-version": "27.0.2",
+            "support-version": "29.0.2",
             "junit-version"  : "4.12",
     ]
     //support配置
     support = [
-            "constraint-layout"       : "1.0.0-beta2",
-            'support-v4'              : "com.android.support:support-v4:${versions["support-version"]}",
-            'appcompat-v7'            : "com.android.support:appcompat-v7:${versions["support-version"]}",
-            'recyclerview-v7'         : "com.android.support:recyclerview-v7:${versions["support-version"]}",
-            'support-v13'             : "com.android.support:support-v13:${versions["support-version"]}",
-            'support-fragment'        : "com.android.support:support-fragment:${versions["support-version"]}",
-            'design'                  : "com.android.support:design:${versions["support-version"]}",
+            "constraint-layout"       : "androidx.constraintlayout:constraintlayout:2.0.4",
+            'appcompat'               : 'androidx.appcompat:appcompat:1.2.0',
+            'recyclerview'            : "androidx.recyclerview:recyclerview:1.2.1",
+            'design'                  : 'com.google.android.material:material:1.2.0',
             'animated-vector-drawable': "com.android.support:animated-vector-drawable:${versions["support-version"]}",
             'junit'                   : "junit:junit:${versions["junit-version"]}",
     ]
@@ -31,8 +28,8 @@ ext {
             //MVVMHabit
             "MVVMHabit"                            : "com.github.goldze:MVVMHabit:3.1.0",
             //阿里路由框架
-            "arouter-api"                          : "com.alibaba:arouter-api:1.4.1",
-            "arouter-compiler"                     : "com.alibaba:arouter-compiler:1.2.2",
+            "arouter-api"                          : "com.alibaba:arouter-api:1.5.2",
+            "arouter-compiler"                     : "com.alibaba:arouter-compiler:1.5.2",
     ]
 }
 
