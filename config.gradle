@@ -8,8 +8,8 @@ ext {
             targetSdkVersion          : 29,
             versionCode               : 1,
             versionName               : "1.0",
-            core_ktx_version          : '1.2.0',
-            kotlin_version            : '1.4.32',
+            core_ktx_version          : '1.6.0',
+            kotlin_version            : '1.6.21',
             kotlinx_coroutines_version: '1.4.3'
     ]
     //version配置

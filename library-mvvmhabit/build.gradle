@@ -43,10 +43,8 @@ dependencies {
         exclude group: 'com.android.support'
     }
     annotationProcessor rootProject.ext.dependencies["glide-compiler"]
+    api project(':library-bindingcollectionadapter')
     //recyclerview的databinding套装
-    api project(':bindingcollectionadapter')
-    api project(":bindingcollectionadapter-recyclerview")
-    api project(":bindingcollectionadapter-viewpager2")
     //Google LiveData和ViewModel组件
     api rootProject.ext.dependencies["lifecycle-extensions"]
     annotationProcessor rootProject.ext.dependencies["lifecycle-compiler"]
