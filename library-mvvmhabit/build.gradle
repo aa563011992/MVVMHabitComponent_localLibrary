@@ -1,20 +1,11 @@
 apply from: "../module.build.gradle"
-android {
-    compileSdkVersion rootProject.ext.android.compileSdkVersion
-    defaultConfig {
-        minSdkVersion rootProject.ext.android.minSdkVersion
-        targetSdkVersion rootProject.ext.android.targetSdkVersion
-        versionCode rootProject.ext.android.versionCode
-        versionName rootProject.ext.android.versionName
-    }
-    resourcePrefix "habit_"
-}
 
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
     //support
     api rootProject.ext.support["appcompat"]
     api rootProject.ext.support["recyclerview"]
+    api rootProject.ext.support["swiperefreshlayout"]
     //rxjava
     api rootProject.ext.dependencies.rxjava
     api rootProject.ext.dependencies.rxandroid
@@ -53,15 +44,9 @@ dependencies {
     }
     annotationProcessor rootProject.ext.dependencies["glide-compiler"]
     //recyclerview的databinding套装
-    api(rootProject.ext.dependencies.bindingcollectionadapter) {
-        exclude group: 'com.android.support'
-    }
-    api(rootProject.ext.dependencies["bindingcollectionadapter-recyclerview"]) {
-        exclude group: 'com.android.support'
-    }
-    api(rootProject.ext.dependencies["bindingcollectionadapter-viewpager2"]) {
-        exclude group: 'com.android.support'
-    }
+    api project(':bindingcollectionadapter')
+    api project(":bindingcollectionadapter-recyclerview")
+    api project(":bindingcollectionadapter-viewpager2")
     //Google LiveData和ViewModel组件
     api rootProject.ext.dependencies["lifecycle-extensions"]
     annotationProcessor rootProject.ext.dependencies["lifecycle-compiler"]
